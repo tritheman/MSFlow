@@ -1,0 +1,27 @@
+/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/mlflow/utils/requirements_utils.py:20: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources  # noqa: TID251
+Registered model 'BestClassifier' already exists. Creating a new version of this model...
+2025/08/26 21:01:04 INFO mlflow.store.model_registry.abstract_store: Waiting up to 300 seconds for model version to finish creation. Model name: BestClassifier, version 6
+Created version '6' of model 'BestClassifier'.
+/Users/tridanghuu/Downloads/mlflow_classification_project/src/tune.py:112: FutureWarning: ``mlflow.tracking.client.MlflowClient.transition_model_version_stage`` is deprecated since 2.9.0. Model registry stages will be removed in a future major release. To learn more about the deprecation of model registry stages, see our migration guide here: https://mlflow.org/docs/latest/model-registry.html#migrating-from-stages
+  client.transition_model_version_stage(
+Running logreg with {'C': 0.1, 'max_iter': 200, 'solver': 'lbfgs'}
+Run id: c586702b2f90431880ae400423ac7e49
+Metrics: {'accuracy': 0.9116666666666666, 'precision': 0.9130434782608695, 'recall': 0.91, 'f1': 0.9115191986644408}
+Running logreg with {'C': 1.0, 'max_iter': 300, 'solver': 'lbfgs'}
+Run id: 322d6fbb6a8f4823b6759c5a48f3a4eb
+Metrics: {'accuracy': 0.9116666666666666, 'precision': 0.9130434782608695, 'recall': 0.91, 'f1': 0.9115191986644408}
+Running logreg with {'C': 10.0, 'max_iter': 400, 'solver': 'lbfgs'}
+Run id: d499f954a68c4affa1464e927b3fe10d
+Metrics: {'accuracy': 0.9116666666666666, 'precision': 0.9130434782608695, 'recall': 0.91, 'f1': 0.9115191986644408}
+Running rf with {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'n_jobs': -1}
+Run id: 4a526eb35ac3483a975a965aa312a37d
+Metrics: {'accuracy': 0.9716666666666667, 'precision': 0.9700996677740864, 'recall': 0.9733333333333334, 'f1': 0.9717138103161398}
+Running rf with {'n_estimators': 200, 'max_depth': 10, 'min_samples_split': 2, 'n_jobs': -1}
+Run id: 85e7502f186943f5a84eb19712c87234
+Metrics: {'accuracy': 0.9666666666666667, 'precision': 0.9635761589403974, 'recall': 0.97, 'f1': 0.9667774086378738}
+Running rf with {'n_estimators': 300, 'max_depth': 5, 'min_samples_split': 4, 'n_jobs': -1}
+Run id: a3694d0c8d144df4b9849a7166af67a4
+Metrics: {'accuracy': 0.9416666666666667, 'precision': 0.9431438127090301, 'recall': 0.94, 'f1': 0.9415692821368948}
+Best run id: 4a526eb35ac3483a975a965aa312a37d metric f1 = 0.9717138103161398
+Registered BestClassifier v6 to Production

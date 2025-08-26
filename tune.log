@@ -1,0 +1,40 @@
+Running logreg with {'C': 0.1, 'max_iter': 200, 'solver': 'lbfgs'}
+Run id: 03de3d49dd8e4568a2acb5af849b80f1
+Metrics: {'accuracy': 0.855, 'precision': 0.8480392156862745, 'recall': 0.865, 'f1': 0.8564356435643564}
+Running logreg with {'C': 1.0, 'max_iter': 300, 'solver': 'lbfgs'}
+Run id: 0ae715b731894fe7a73e216bdbcbd7cf
+Metrics: {'accuracy': 0.855, 'precision': 0.8514851485148515, 'recall': 0.86, 'f1': 0.8557213930348259}
+Running logreg with {'C': 10.0, 'max_iter': 400, 'solver': 'lbfgs'}
+Run id: 916ed905684340acb9a08b3b9f01ef59
+Metrics: {'accuracy': 0.8575, 'precision': 0.8522167487684729, 'recall': 0.865, 'f1': 0.858560794044665}
+Running rf with {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'n_jobs': -1}
+Run id: e9397645d1c442a6afb4ec0e23a775ac
+Metrics: {'accuracy': 0.945, 'precision': 0.9362745098039216, 'recall': 0.955, 'f1': 0.9455445544554455}
+Running rf with {'n_estimators': 200, 'max_depth': 10, 'min_samples_split': 2, 'n_jobs': -1}
+Run id: c85f12506e8f43e0b29c9e66d3f8e506
+Metrics: {'accuracy': 0.9225, 'precision': 0.9043062200956937, 'recall': 0.945, 'f1': 0.9242053789731052}
+Running rf with {'n_estimators': 300, 'max_depth': 5, 'min_samples_split': 4, 'n_jobs': -1}
+Run id: 2796d0f3f13140fe8ac1630231826b30
+Metrics: {'accuracy': 0.875, 'precision': 0.8676470588235294, 'recall': 0.885, 'f1': 0.8762376237623762}
+Best run id: e9397645d1c442a6afb4ec0e23a775ac metric f1 = 0.9455445544554455
+Registered BestClassifier v1 to Production
+Running logreg with {'C': 0.1, 'max_iter': 200, 'solver': 'lbfgs'}
+Run id: 076bc5a03d814232b3fa06469f7b4516
+Metrics: {'accuracy': 0.9116666666666666, 'precision': 0.9130434782608695, 'recall': 0.91, 'f1': 0.9115191986644408}
+Running logreg with {'C': 1.0, 'max_iter': 300, 'solver': 'lbfgs'}
+Run id: 774f0f2884b54b10856a04600acb8924
+Metrics: {'accuracy': 0.9116666666666666, 'precision': 0.9130434782608695, 'recall': 0.91, 'f1': 0.9115191986644408}
+Running logreg with {'C': 10.0, 'max_iter': 400, 'solver': 'lbfgs'}
+Run id: f7c1f50acef54e608fafef90cc56a5fc
+Metrics: {'accuracy': 0.9116666666666666, 'precision': 0.9130434782608695, 'recall': 0.91, 'f1': 0.9115191986644408}
+Running rf with {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'n_jobs': -1}
+Run id: d5d4815788124704ba03eaf6e9d9fae0
+Metrics: {'accuracy': 0.965, 'precision': 0.9665551839464883, 'recall': 0.9633333333333334, 'f1': 0.9649415692821369}
+Running rf with {'n_estimators': 200, 'max_depth': 10, 'min_samples_split': 2, 'n_jobs': -1}
+Run id: af24d55f41b8496cb8dbc62adca18610
+Metrics: {'accuracy': 0.9716666666666667, 'precision': 0.9732441471571907, 'recall': 0.97, 'f1': 0.9716193656093489}
+Running rf with {'n_estimators': 300, 'max_depth': 5, 'min_samples_split': 4, 'n_jobs': -1}
+Run id: a4d3b54a325542ada2d70694faec93fe
+Metrics: {'accuracy': 0.9383333333333334, 'precision': 0.9368770764119602, 'recall': 0.94, 'f1': 0.9384359400998337}
+Best run id: af24d55f41b8496cb8dbc62adca18610 metric f1 = 0.9716193656093489
+Registered BestClassifier v2 to Production

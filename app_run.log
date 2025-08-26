@@ -1,0 +1,104 @@
+/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/mlflow/utils/requirements_utils.py:20: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources  # noqa: TID251
+/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/mlflow/store/artifact/utils/models.py:32: FutureWarning: ``mlflow.tracking.client.MlflowClient.get_latest_versions`` is deprecated since 2.9.0. Model registry stages will be removed in a future major release. To learn more about the deprecation of model registry stages, see our migration guide here: https://mlflow.org/docs/latest/model-registry.html#migrating-from-stages
+  latest = client.get_latest_versions(name, None if stage is None else [stage])
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.5:8000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/mlflow/utils/requirements_utils.py:20: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources  # noqa: TID251
+/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/mlflow/store/artifact/utils/models.py:32: FutureWarning: ``mlflow.tracking.client.MlflowClient.get_latest_versions`` is deprecated since 2.9.0. Model registry stages will be removed in a future major release. To learn more about the deprecation of model registry stages, see our migration guide here: https://mlflow.org/docs/latest/model-registry.html#migrating-from-stages
+  latest = client.get_latest_versions(name, None if stage is None else [stage])
+ * Debugger is active!
+ * Debugger PIN: 679-223-225
+127.0.0.1 - - [26/Aug/2025 21:04:14] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/mlflow/pyfunc/__init__.py", line 699, in _validate_prediction_input
+    data = _enforce_schema(data, input_schema, flavor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/mlflow/models/utils.py", line 1008, in _enforce_schema
+    raise MlflowException(message)
+mlflow.exceptions.MlflowException: Model is missing inputs ['f0', 'f1', 'f2', 'f3', 'f4', 'f5', 'f6', 'f7', 'f8', 'f9', 'f10', 'f11', 'f12', 'f13', 'f14', 'f15', 'f16', 'f17', 'f18', 'f19']. Note that there were extra inputs: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tridanghuu/Downloads/mlflow_classification_project/src/app.py", line 57, in predict
+    preds = MODEL.predict(X)
+            ^^^^^^^^^^^^^^^^
+  File "/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/mlflow/pyfunc/__init__.py", line 738, in predict
+    return self._predict(data, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/mlflow/pyfunc/__init__.py", line 768, in _predict
+    data, params = self._validate_prediction_input(data, params)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/mlflow/pyfunc/__init__.py", line 702, in _validate_prediction_input
+    raise MlflowException.invalid_parameter_value(
+mlflow.exceptions.MlflowException: Failed to enforce schema of data '     0    1    2    3    4    5    6    7    8    9
+0  0.2  1.3 -0.7  0.1  0.0  0.5  0.2 -0.6  0.8 -0.1' with schema '['f0': double (required), 'f1': double (required), 'f2': double (required), 'f3': double (required), 'f4': double (required), 'f5': double (required), 'f6': double (required), 'f7': double (required), 'f8': double (required), 'f9': double (required), 'f10': double (required), 'f11': double (required), 'f12': double (required), 'f13': double (required), 'f14': double (required), 'f15': double (required), 'f16': double (required), 'f17': double (required), 'f18': double (required), 'f19': double (required)]'. Error: Model is missing inputs ['f0', 'f1', 'f2', 'f3', 'f4', 'f5', 'f6', 'f7', 'f8', 'f9', 'f10', 'f11', 'f12', 'f13', 'f14', 'f15', 'f16', 'f17', 'f18', 'f19']. Note that there were extra inputs: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+127.0.0.1 - - [26/Aug/2025 21:04:33] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/mlflow/pyfunc/__init__.py", line 699, in _validate_prediction_input
+    data = _enforce_schema(data, input_schema, flavor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/mlflow/models/utils.py", line 1008, in _enforce_schema
+    raise MlflowException(message)
+mlflow.exceptions.MlflowException: Model is missing inputs ['f0', 'f1', 'f2', 'f3', 'f4', 'f5', 'f6', 'f7', 'f8', 'f9', 'f10', 'f11', 'f12', 'f13', 'f14', 'f15', 'f16', 'f17', 'f18', 'f19']. Note that there were extra inputs: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tridanghuu/Downloads/mlflow_classification_project/src/app.py", line 57, in predict
+    preds = MODEL.predict(X)
+            ^^^^^^^^^^^^^^^^
+  File "/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/mlflow/pyfunc/__init__.py", line 738, in predict
+    return self._predict(data, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/mlflow/pyfunc/__init__.py", line 768, in _predict
+    data, params = self._validate_prediction_input(data, params)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/mlflow/pyfunc/__init__.py", line 702, in _validate_prediction_input
+    raise MlflowException.invalid_parameter_value(
+mlflow.exceptions.MlflowException: Failed to enforce schema of data '     0    1    2    3    4    5    6    7    8    9
+0  0.2  1.3 -0.7  0.1  0.0  0.5  0.2 -0.6  0.8 -0.1' with schema '['f0': double (required), 'f1': double (required), 'f2': double (required), 'f3': double (required), 'f4': double (required), 'f5': double (required), 'f6': double (required), 'f7': double (required), 'f8': double (required), 'f9': double (required), 'f10': double (required), 'f11': double (required), 'f12': double (required), 'f13': double (required), 'f14': double (required), 'f15': double (required), 'f16': double (required), 'f17': double (required), 'f18': double (required), 'f19': double (required)]'. Error: Model is missing inputs ['f0', 'f1', 'f2', 'f3', 'f4', 'f5', 'f6', 'f7', 'f8', 'f9', 'f10', 'f11', 'f12', 'f13', 'f14', 'f15', 'f16', 'f17', 'f18', 'f19']. Note that there were extra inputs: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]

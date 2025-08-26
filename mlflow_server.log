@@ -1,0 +1,17 @@
+/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/mlflow/utils/requirements_utils.py:20: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources  # noqa: TID251
+[2025-08-26 20:55:33 +0700] [3826] [INFO] Starting gunicorn 22.0.0
+[2025-08-26 20:55:33 +0700] [3826] [INFO] Listening at: http://127.0.0.1:5001 (3826)
+[2025-08-26 20:55:33 +0700] [3826] [INFO] Using worker: sync
+[2025-08-26 20:55:33 +0700] [3827] [INFO] Booting worker with pid: 3827
+[2025-08-26 20:55:33 +0700] [3828] [INFO] Booting worker with pid: 3828
+[2025-08-26 20:55:33 +0700] [3829] [INFO] Booting worker with pid: 3829
+[2025-08-26 20:55:33 +0700] [3830] [INFO] Booting worker with pid: 3830
+/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/mlflow/utils/requirements_utils.py:20: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources  # noqa: TID251
+/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/mlflow/utils/requirements_utils.py:20: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources  # noqa: TID251
+/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/mlflow/utils/requirements_utils.py:20: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources  # noqa: TID251
+/Users/tridanghuu/Downloads/mlflow_classification_project/.venv/lib/python3.12/site-packages/mlflow/utils/requirements_utils.py:20: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources  # noqa: TID251
