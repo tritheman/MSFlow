@@ -85,9 +85,6 @@ hoặc
 - `start_mlflow_server.sh` chạy MLflow server với SQLite registry.
 - `requirements.txt` các thư viện cần thiết.
 
-Gợi ý chấm điểm
-- 1 điểm cho dữ liệu và pipeline cơ bản.
-- 2 điểm cho ghi log MLflow đầy đủ params, metrics, artifacts.
-- 2 điểm cho tuning nhiều mô hình và so sánh kết quả.
-- 2 điểm cho đăng ký và chuyển stage mô hình tốt nhất.
-- 1 điểm cho Flask app hoạt động đúng với mô hình Production.
+## 7. Video demo
+
+Xem nhanh: [Demo-Movie.mov](./Demo-Movie.mov)
